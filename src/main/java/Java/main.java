@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Kalender
+ * Servlet implementation class main
  */
-@WebServlet("/Kalender")
-public class Kalender extends HttpServlet {
+@WebServlet("/main")
+public class main extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Kalender() {
+    public main() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -39,3 +39,18 @@ public class Kalender extends HttpServlet {
 	}
 
 }
+
+
+
+
+
+//@paramatisedtest voor alle maanden of ze goed functioneren
+//@paramatisedtest voor alle dagen per elke maand of ze goed functioneren
+//@paramatisedtest voor alle pijlen in elke mogelijke opstelling
+
+//domein klassendiagram
+//doen alsof er meerdere huizen zijn
+//polymorfise superclass en subclasses
+//goed op beoordelingscriteria letten
+
+//jQuery
