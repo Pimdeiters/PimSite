@@ -44,15 +44,6 @@ public class main extends HttpServlet {
 
 
 
-//@paramatisedtest voor alle maanden of ze goed functioneren
-//@paramatisedtest voor alle dagen per elke maand of ze goed functioneren
-//@paramatisedtest voor alle pijlen in elke mogelijke opstelling
-
-//domein klassendiagram
-//doen alsof er meerdere huizen zijn
-//polymorfise superclass en subclasses
-//goed op beoordelingscriteria letten
-
 //jQuery
 
 //github token:                        als je moet inloggen is dit t ww
