@@ -54,3 +54,6 @@ public class main extends HttpServlet {
 //goed op beoordelingscriteria letten
 
 //jQuery
+
+//github token:                        als je moet inloggen is dit t ww
+//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
