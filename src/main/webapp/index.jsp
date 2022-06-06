@@ -8,10 +8,12 @@
 <title>Hello World Java EE</title>
 </head>
 <body>
-    <h1>Hello JSP and Servlet!</h1>
-<form action="helloServlet" method="post">
-    Enter your name: <input type="text" name="yourName" size="20">
-    <input type="submit" value="Call Servlet" />
+    <center><font size = +7>Wil je een huis huren of verhuren?</center>
+<form action="Huren" method="post">
+    <center><input type="submit" style = "height: 100px; width: 200px" value="Ik wil een huis huren" /></center>
+</form>
+<form action="Verhuren" method="post">
+    <center><input type="submit" style = "height: 100px; width: 200px" value="Ik wil een huis verhuren" /></center>
 </form>
 </body>
 </html>
