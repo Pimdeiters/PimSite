@@ -14,36 +14,29 @@ import Java.*; //import alle gemaakte classes
 /**
  * Servlet implementation class main
  */
-@WebServlet("/Verhuren")
-public class Verhuren extends HttpServlet {
+@WebServlet("/VerhurenHuis")
+public class VerhurenHuis extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Verhuren() {
+    public VerhurenHuis() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		//response.getWriter().append("Huis aanmaken:");
-		
-		PrintWriter writer = response.getWriter();
+    public static void html(HttpServletResponse response) throws IOException {
+PrintWriter writer = response.getWriter();
 		
 		String html = "<html>";
-        html += "<form name=\"loginForm\" method=\"post\" action=\"Home\">";      
+        html += "<form name=\"loginForm\" method=\"post\" action=\"HomeHuis\">";      
         html += "<center>";
         html += "Naam: <input type=\"text\" name=\"Naam\"/> <br/>";   
         html += "Email: <input type=\"text\" name=\"Email\"/> <br/>";
         html += "Tekst: <input type=\"text\" name=\"Tekst\"/> <br/>";
         html += "Plaatjes: <input type=\"text\" name=\"Plaatjes\"/> <br/>";
-        html += "Aantalkamers: <input type=\"text\" name=\"Aantalkamers\"/> <br/>";
+        html += "Aantal kamers: <input type=\"text\" name=\"Aantalkamers\"/> <br/>";
         html += "Locatie: <input type=\"text\" name=\"Locatie\"/> <br/>";
         html += "Prijs per week: <input type=\"text\" name=\"Prijspw\"/> <br/>";
         html += "Aantal verdiepingen: <input type=\"text\" name=\"Verdiepingen\"/> <br/>";
@@ -54,6 +47,18 @@ public class Verhuren extends HttpServlet {
         html += "</html>";
         
         writer.println(html);
+    }
+    
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Huis aanmaken:");
+		
+		html(response);
+		
         
         String Naam = request.getParameter("Naam");
         String Email = request.getParameter("Email");
